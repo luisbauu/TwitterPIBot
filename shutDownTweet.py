@@ -30,11 +30,13 @@ def tweetevery314(timeofday):
 		api.send_direct_message(3254499216,"Pi has been tweeted")
 		print("tweeted!")
 		time.sleep(60)
+		os.system("shutdown /s /t 1")
 	elif timeofday == "am":
 		api.update_status("Good Morning ! It's PI time !\n\n" + getDate())
 		api.send_direct_message(3254499216,"Pi has been tweeted")
 		print("tweeted!")
 		time.sleep(60)
+		os.system("shutdown /s /t 1")
 	else:
 		return 
 
